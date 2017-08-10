@@ -5,7 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
-<p th:text="'Hello, ' + ${username} + '!'"/>
+<!--@thymesVar id="username" type="java.lang.String"-->
+<p th:text="'Hello, ' + ${username} + '!'">fd</p>
 <form th:action="@{/logout}" method="post">
     <input type="submit" value="Sign Out"/>
 </form>
